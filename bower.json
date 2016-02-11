@@ -1,0 +1,24 @@
+{
+  "name": "COMP308-Assigment1-Portfolio",
+  "description": "Comp308-Assignment 1 deployed to Azure",
+  "main": "",
+  "authors": [
+    "johipe <johipe@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/johipe/COMP308-Assignment1-Portfolio",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/Scripts/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0"
+  }
+}
