@@ -4,12 +4,12 @@ var nodemailer = require("nodemailer");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Johanna Ponce', msg:'Welcome to my Portfolio'});
+  res.render('index', { title: 'Johanna Ponce', msg:'Welcome to my Portfolio', img:'/images/butterfly_img.png'});
 });
 
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About Me', msg:'Computer engineer with more than 4 years of experience guiding and supporting internal business units to maximize their use of the technology resources as a result of leading software projects through all the stages of the system development life cycle and business process analysis and improvement through automation when possible.' });
+  res.render('index', { title: 'About Me', msg:'Computer engineer with more than 4 years of experience guiding and supporting internal business units to maximize their use of the technology resources as a result of leading software projects through all the stages of the system development life cycle and business process analysis and improvement through automation when possible.', img:'/images/Johanna_photo.jpg' });
 });
 
 /* GET projects page. */
