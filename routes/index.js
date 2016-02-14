@@ -4,7 +4,7 @@ var nodemailer = require("nodemailer");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Johanna Ponce', msg:'Welcome to my Portfolio', img:'/images/butterfly_img.png'});
+  res.render('index', { title: 'Johanna Ponce', msg:'Welcome to my Portfolio', img:'/images/butterfly2.jpg'});
 });
 
 /* GET about page. */
