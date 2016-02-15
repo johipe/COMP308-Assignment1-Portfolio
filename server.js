@@ -1,12 +1,22 @@
 #!/usr/bin/env node
 
+/**File name:server.js
+ * Author's name:Johanna Ponce
+ * web site name: Portfolio
+ * file description: main file.js
+ */
+
 /**
  * Module dependencies.
  */
 
+
+
 var app = require('./app');
 var debug = require('debug')('COMP308-Assigment1-Portfolio:server');
 var http = require('http');
+
+
 
 /**
  * Get port from environment and store in Express.

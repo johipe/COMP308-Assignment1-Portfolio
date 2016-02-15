@@ -1,3 +1,9 @@
+ <!--/**File name:contact.ejs
+ * Author's name:Johanna Ponce
+ * web site name: Portfolio
+ * file description: Contact page view
+ */ -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,18 +20,22 @@
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script>// <![CDATA[
 $(document).ready(function(){
-
+    
     var from,to,subject,text;
-    $("#send_email").click(function(){      
+    $("#send_email").click(function(){     
+        console.log("inside of the jquery"); 
         to=$("#emailFrom").val();
         subject=$("#emailSubject").val();
         text=$("#emailContent").val();
         $("#message").text("Sending E-mail...Please wait");
         $.get("http://localhost:3000/send",{to:to,subject:subject,text:text},function(data){
+        console.log("Data" + data); 
         if(data=="sent")
         {
             $("#message").empty().html("Email is been sent at "+to+" . Please check inbox !");
+            //alert('Email sent');
         }
+        $.alert("Email sent","title");
 
 });
     });
@@ -67,7 +77,6 @@ $(document).ready(function(){
         </div>
         <!-- /.container-fluid -->
     </nav>
-
 
     <!-- MAIN CONTENT -->
     
